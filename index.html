@@ -3,7 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gym Website</title>
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="nav-container">
+        <img src="NavImages/logo.png" alt="GYP Logo" class="logo" />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="NavImages/add-to-cart.png"
+          alt="Add to Cart"
+          class="cart-logo"
+        />
+      </div>
+    </header>
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video">
+        <source src="NavImages/gym-workout.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay-text">
+        <h1>ONE BAR FOR EVERY WORKOUT</h1>
+        <br /><br />
+        <button class="cta-button">Become a Member</button>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <div class="split-section">
+      <!-- Left Image Section -->
+      <div class="left-image">
+        <img src="NavImages/byProduct.jpg" alt="Gym Products" />
+      </div>
+      <!-- Right Black Background Section -->
+      <div class="right-content">
+        <h2>Elevate Your Fitness Journey</h2>
+        <button class="cta-button">Buy Our Products</button>
+      </div>
+    </div>
+  </body>
 </html>
