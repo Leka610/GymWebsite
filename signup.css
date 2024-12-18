@@ -22,21 +22,21 @@ input[type="password"]:focus {
 label {
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* Regular size for label text */
-  color: #555; /* Slightly lighter color for labels */
+  color: gold; /* Slightly lighter color for labels */
 }
 
 .container h1 {
   font-family: "Roboto", sans-serif;
   font-size: 24px; /* Larger size for the heading */
   font-weight: bold; /* Make the heading bold */
-  color: #333; /* Dark color for heading */
+  color: gold; /* Dark color for heading */
   margin-bottom: 10px; /* Add some spacing below the heading */
 }
 
 .container p {
   font-family: "Roboto", sans-serif;
   font-size: 14px; /* Regular size for description text */
-  color: #555; /* Light color for paragraph text */
+  color: gold; /* Light color for paragraph text */
 }
 
 /* Set a style for all buttons */
@@ -86,20 +86,22 @@ button:hover {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
-  top: 0;
+  top: -0.5%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  overflow: visible; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.6);
   padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  background-color: #333;
+  margin: -2.5% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 2px solid black;
+  border-radius: 2%;
   width: 35%; /* Could be more or less, depending on screen size */
+  height: 105%;
   position: relative; /* Add relative positioning for the close button to be placed inside this container */
 }
 
@@ -121,7 +123,7 @@ hr {
 
 .close:hover,
 .close:focus {
-  color: #f44336;
+  color: gold;
   cursor: pointer;
 }
 
