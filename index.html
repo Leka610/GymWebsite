@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation Bar</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="modal.js"></script>
   </head>
   <body>
     <header>
@@ -15,7 +16,9 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li>
+              <a href="javascript:void(0)" onclick="loadModal()">Sign Up</a>
+            </li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -26,6 +29,7 @@
         />
       </div>
     </header>
+
     <div class="video-container">
       <video autoplay muted loop id="bg-video">
         <source src="NavImages/gym-workout.mp4" type="video/mp4" />
@@ -36,14 +40,11 @@
         <button class="cta-button">Become a Member</button>
       </div>
     </div>
-    <br /><br /><br /><br />
 
     <div class="split-section">
-      <!-- Left Image Section -->
       <div class="left-image">
         <img src="NavImages/byProduct.jpg" alt="Gym Products" />
       </div>
-      <!-- Right Black Background Section -->
       <div class="right-content">
         <h2>Elevate Your Fitness Journey</h2>
         <button class="cta-button">Buy Our Products</button>
