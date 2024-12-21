@@ -47,6 +47,7 @@ class User {
         if ($stmt->execute()) {
             $this->db->close();
             return "Signup successful!";
+            //header("Location: transactionpage.php");
         } else {
             $this->db->close();
             return "Error: " . $stmt->error;
