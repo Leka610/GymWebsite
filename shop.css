@@ -1,0 +1,308 @@
+.shop-title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  font-weight: bold;
+  color: #ffdf00;
+  background-color: black;
+}
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  padding-top: 40px;
+}
+.product {
+  background: #ffdf00;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.product:hover img {
+  transform: scale(1.1);
+}
+.product:hover .description {
+  opacity: 1;
+}
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.product-price {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+.buy-button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #ffdf00;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
+/*ANIMATIONS*/
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("NavImages/gym-background.jpg") no-repeat center center/cover;
+  color: #ffdf00;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.hero h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  animation: typing 4s steps(30) infinite,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  display: inline-block;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.category-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffdf00;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  background-color: #ffdf00;
+}
+
+.category {
+  width: 200px;
+  text-align: center;
+  background: black;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+.category img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.1);
+}
+
+.category h3 {
+  margin: 10px 0;
+  color: #ffdf00;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cta {
+  text-align: center;
+  padding: 50px;
+  background-color: black;
+  color: #ffdf00;
+}
+
+.cta button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffdf00;
+  background: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*VIDEO SLIDERI*/
+.Workouts {
+  background-color: #ffdf00;
+}
+.main-title {
+  text-align: center;
+  font-size: 65px;
+  margin-top: 0px;
+  font-weight: bold;
+  color: black;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-slider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+}
+
+.video-item {
+  position: relative;
+  width: 300px; /* Make the video items larger */
+  height: 200px; /* Adjust the height to match the width */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border-radius: 10px;
+}
+
+.video-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.exercise-name {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#modalVideo {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
