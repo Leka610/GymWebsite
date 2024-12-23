@@ -1,0 +1,78 @@
+/* Apply styles to the About page */
+.about-page body,
+.about-page h1,
+.about-page p,
+.about-page ul {
+  margin: 0;
+  padding: 0;
+}
+
+.about-page body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.about-page #about-us {
+  padding: 2rem;
+}
+
+.about-page .about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.about-page .about-text {
+  width: 50%;
+  padding: 1rem;
+}
+
+.about-page .about-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-page .about-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-page .about-image {
+  width: 50%;
+  text-align: center;
+  height: 50%;
+}
+
+.about-page .about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Reversed section (when image and text are flipped) */
+.about-page .about-section.reversed {
+  flex-direction: row-reverse;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-page .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-page .about-text,
+  .about-page .about-image {
+    width: 100%;
+  }
+
+  .about-page .about-text {
+    padding: 0.5rem;
+  }
+
+  .about-page .about-image img {
+    width: 100%;
+    height: auto;
+  }
+}
