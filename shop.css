@@ -137,7 +137,7 @@
   margin-top: 0px;
   font-weight: bold;
   color: black;
-  background-color: #ffdf00;
+  background-color: linear-gradient(135deg, yellow, black);
 }
 
 .categories {
@@ -145,7 +145,7 @@
   justify-content: center;
   gap: 20px;
   padding: 50px;
-  background-color: #ffdf00;
+  background-color: linear-gradient(135deg, yellow, black);
 }
 
 .category {
@@ -207,7 +207,7 @@
 
 /*VIDEO SLIDERI*/
 .Workouts {
-  background-color: #ffdf00;
+  background: linear-gradient(135deg, yellow, black);
 }
 .main-title {
   text-align: center;

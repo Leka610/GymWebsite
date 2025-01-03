@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -29,6 +30,7 @@
         justify-content: center;
         margin-top: 40px;
         overflow: hidden;
+        flex-wrap: wrap;
       }
 
       .review-slider {
@@ -64,6 +66,7 @@
         display: flex;
         justify-content: center;
         margin-top: 40px;
+        flex-wrap: wrap;
       }
 
       .membership-table {
@@ -72,6 +75,7 @@
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 10px;
+        margin-bottom: 20px;
       }
 
       .membership-table h3 {
@@ -163,10 +167,50 @@
           width: 90%;
           margin: 10px 0;
         }
+
+        .review-slider .review {
+          width: 80%;
+          margin: 10px auto;
+        }
+
+        .membership-section,
+        .reviews-section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        header {
+          font-size: 36px;
+          padding: 40px 20px;
+        }
       }
     </style>
   </head>
   <body>
+    <div class="nav-container">
+      <img src="NavImages/logo.png" alt="GYP Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#shop-link">Shop</a></li>
+          <li>
+            <a href="javascript:void(0)" onclick="loadAbout()">About</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="loadModal()">Sign Up</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="NavImages/add-to-cart.png"
+        alt="Add to Cart"
+        class="cart-logo"
+      />
+    </div>
+    <br />
     <header>Contact Us</header>
 
     <section class="reviews-section">
@@ -209,7 +253,7 @@
         </div>
       </div>
     </section>
-
+    <br /><br /><br /><br />
     <section class="membership-section">
       <div class="membership-table">
         <h3>Basic Membership</h3>
@@ -285,19 +329,22 @@
         </tr>
       </table>
     </section>
-
+    <br /><br />
     <section class="contact-form">
       <h2>Get in Touch</h2>
       <form action="submit_form.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit">Send Message</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    >Send Message</button>
       </form>
     </section>
   </body>
