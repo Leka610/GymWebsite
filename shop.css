@@ -16,7 +16,11 @@
 }
 
 .product {
-  background: linear-gradient(135deg, yellow, black);
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgb(179, 174, 13),
+    rgb(24, 24, 24)
+  );
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -138,7 +142,11 @@
   margin-top: 0px;
   font-weight: bold;
   color: white;
-  background: linear-gradient(135deg, yellow, black);
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgb(179, 174, 13),
+    rgb(24, 24, 24)
+  );
 }
 
 .categories {
@@ -146,13 +154,21 @@
   justify-content: center;
   gap: 20px;
   padding: 50px;
-  background: linear-gradient(135deg, yellow, black);
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgb(179, 174, 13),
+    rgb(24, 24, 24)
+  );
 }
 
 .category {
   width: 200px;
   text-align: center;
-  background-color: linear-gradient(135deg, yellow, black);
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgb(179, 174, 13),
+    rgb(24, 24, 24)
+  );
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -208,7 +224,11 @@
 
 /*VIDEO SLIDERI*/
 .Workouts {
-  background: linear-gradient(135deg, yellow, black);
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgb(179, 174, 13),
+    rgb(24, 24, 24)
+  );
 }
 .main-title {
   text-align: center;

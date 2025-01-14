@@ -28,10 +28,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background: radial-gradient(
+    ellipse at 50% 80%,
+    rgb(179, 174, 13),
+    rgb(24, 24, 24)
+  );
   height: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
-  border-bottom: 2px solid #856e07; /* Add only a bottom border */
+  border-bottom: 2px solid #282725; /* Add only a bottom border */
 }
 
 /* Logo Styling */
@@ -127,6 +131,6 @@ nav {
 }
 
 .member-button:active {
-  background-color: linear-gradient(135deg, yellow, black);
+  background-color: linear-gradient(yellow, black);
   transform: scale(1); /* Reset zoom on click */
 }
